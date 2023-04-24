@@ -1,0 +1,22 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group" style="color: gray;">
+        <fieldset id="name-field">
+            {{ form.name.label }}
+            {{ form.name(class = 'form-control', placeholder = "Enter Superhero Name" ) }}
+        </fieldset>
+        <fieldset id="descrip-field">
+            {{ form.description.label }}
+            {{ form.description(class = 'form-control', placeholder = "Enter Description" ) }}
+        </fieldset>
+        <fieldset id="comic-appeared-field">
+            {{ form.comics_appeared_in.label }}
+            {{ form.comics_appeared_in(class = 'form-control', placeholder = "Number of Comics the Superhero
+            Appeared In") }}
+        </fieldset>
+        <fieldset id="superpower-field">
+            {{ form.super_power.label }}
+            {{ form.super_power(class = 'form-control', placeholder = "Enter Superpower") }}
+        </fieldset>
+    </div>
+</form>
